@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Customer Details</title>
+    <link rel="icon" type="png" href="https://cdn.iconscout.com/icon/free/png-256/customer-survey-experience-questionarie-form-satisfaction-analytics-18-9572.png">
+    <link rel="stylesheet" href="customer.css">
+</head>
+
+<body>
+    <div class="body-container">
+        <header>
+            <h1 class="customer">Customer Details:</h1>
+        </header>
+        <main>
+            <p class="full">Full name<span style="color:red">&#42;</span></p>
+            <div class="details">
+
+                <div class="first">
+                    <input type="text" name="first_name" class="firstname" required />
+                    <label class="firstlabel">First name</label>
+                </div>
+                <div class="last">
+                    <input type="text" name="last_name" class="lastname" required />
+                    <label class="lastlabel ">Last name</label>
+                </div>
+
+            </div>
+            <div class="details ">
+                <p class="full ">Address<span style="color:red ">&#42;</span></p>
+                <input type="text " name="streetAddress " class="address " required />
+                <label class="streetlabel ">Street Address</label>
+                <input type="text " name="street-address-line " class="addresstwo " />
+                <label class="streettwolabel ">Street Address Line 2</label>
+                <input type="text " name="city " class="city " required />
+                <label class="citylabel ">City</label>
+                <input type="text " name="state-province " class="stateprovince " />
+                <label class="stateprovincelabel ">State/Province</label>
+                <input type="text " name="postal-code " class="postalcode " required />
+                <label class="postalcodelabel ">Postal/Zip code</label>
+            </div>
+            <div class="details ">
+                <p class="full ">Phone Number<span style="color:red ">&#42;</span></p>
+                <input type="tel " class="phone " name="phone " maxlength="10 " placeholder="(000) 000-0000 " pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4} " required />
+            </div>
+            <div class="details ">
+                <p class="full ">E-mail:</p>
+                <input type="text " name="email " class="email " placeholder="ex:email@yahoo.com " required />
+                <label class="maillabel ">example@example.com</label>
+            </div>
+            <hr style="margin-top:70px; ">
+            <div class="details ">
+                <p class="full ">How did you hear about us?<span style="color:red ">&#42;</span></p>
+                <select name="how " class="how " id="selector ">
+                <option value="select ">Please Select</option>
+                <option value="Newspaper ">Newspaper</option>
+                <option value="Internet ">Internet</option>
+                <option value="Magazine ">Magazine</option>
+                <option value="other ">Other </option>
+                </select>
+            </div>
+            <div class="details ">
+                <p for="Feedback " class="full ">Feedback about us:</p>
+                <textarea class="Feedback " name="Feedback " rows="10 " cols="50 ">
+			</textarea>
+            </div>
+            <div class="details ">
+                <p for="Suggestions " class="full ">Suggestions if any for further improvement:</p>
+                <textarea class="Suggestions " name="Suggestions " rows="10 " cols="50 ">
+			</textarea>
+            </div>
+            <div class="details ">
+                <p class="full">Will you be willing to recommend us?</p>
+                <label class="container "> Yes
+                    <input type="checkbox " checked="checked ">
+                     <span class="checkmark "></span>
+                    </label>
+
+                <label class="container ">Maybe
+                    <input type="checkbox ">
+                    <span class="checkmark "></span>
+                    </label>
+
+                <label class="container ">No
+                    <input type="checkbox ">
+                    <span class="checkmark "></span>
+                    </label>
+
+            </div>
+            <div>
+                <p class="full" style="padding-top:20px">Please give reference of any two people whom you feel:</p>
+                <table class="people-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Full name</th>
+                            <th>Address</th>
+                            <th>Contact Numbers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <footer>
+                    <div class="full ">
+                        <button type="submit " class="submit-button ">
+						Submit
+					  </button>
+                    </div>
+                </footer>
+
+</body>
+
+</html>
